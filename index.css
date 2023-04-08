@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+   font-family: 'Awakenning';
+   src: url(./Fonts/AWAKENNING\ Personal\ Use.ttf);
+}
+
+@font-face {
+   font-family: 'Frahv';
+   src: url(./Fonts/Franklin\ Gothic\ Heavy\ Regular.ttf);
+}
+
+@font-face{
+   font-family: 'FSS';
+   src: url(./Fonts/FREESCPT.TTF);
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   color: white;
+
+}
+
+.home{
+   background-image: none;
+}
+
+body{
+   background-color: #000e31;
+   background-image: url(./Images/Roto\ techX\ -\ no\ tagline\ transparent.png);
+   background-repeat: no-repeat;
+   background-position: 280px 220px;
+   background-size: 65%;
+}
+
+nav{
+   background-color: #6b7797;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navdesk{
+   display: flex;
+}
+
+.navmobile{
+   display: none;
+}
+
+
+a{
+   text-decoration: none;
+   margin: 0 1rem 0 0.5rem;
+}
+
+.navbtn{
+   background: transparent;
+   border: transparent;
+   padding: 6px;
+   font-family: 'Inter',sans-serif;
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+.active{
+   border-bottom: solid 3px white;
+   border-radius: 2px;
+   width: 80%;
+   margin-top: 3.5px;
+}
+
+.main{
+   display: grid;
+   grid-template-columns: auto auto;
+   margin: 50px;
+}
+
+p{
+   font-family: 'Inter', sans-serif;
+}
+
+
+/* Problem Domain */
+.probdomain{
+   background-image: url(./Images/Roto\ techX\ -\ no\ tagline\ transparent.png);
+   background-repeat: no-repeat;
+   background-position: 280px 220px;
+   background-size: 65%;
+}
+
+.event_button{
+   border: white solid 2px;
+   /* background: transparent !important; */
+   height:350px;
+   width:300px;
+   background: white;
+   border-radius: 20px;
+}
+
+.container {
+   margin: 1rem 0 0 0;
+   position: relative;
+   width: 250px;
+   text-align: center;
+}
+
+#event-list1,#event-list2{
+   margin-left: -3rem;
+}
+.bottom-left {
+   position: absolute;
+   bottom: 30px;
+   left: 60px;
+   padding-right: 25px;
+   font-family: 'Inter' ,sans-serif;
+   color: black;
+}
+
+/* Rules Page */
+.rules{
+   background-image: url(./Images/Roto\ techX\ -\ no\ tagline\ transparent.png);
+   background-repeat: no-repeat;
+   background-position: 280px 220px;
+   background-size: 65%;
+}
+
+.download{
+   padding: 5px;
+   border: transparent;
+   border-radius: 10px;
+}
+
+/* Resource Page */
+.resource{
+   background-image: url(./Images/Roto\ techX\ -\ no\ tagline\ transparent.png);
+   background-repeat: no-repeat;
+   background-position: 280px 220px;
+   background-size: 65%;
+}
+
+.list{
+   margin-top: -30px;
+   margin-left: 150px;
+   font-size: 30px;
+   font-family: inter;
+   font-weight: bolder;
+
+}
+
+.button{
+   border-radius: 18px;
+   font-size:22px;
+   padding: 10px;
+   background-color: #FF0000;
+   margin-top: 70px;
+   border: transparent;
+}
+
+.header
+{
+   font-family: 'Inter';
+   margin-left: 70px;
+   margin-top:20px;
+}
+.header2{
+   margin-left: 70px;
+   margin-top:60px;
+}
+
+.par-cont{
+   margin-left: 70px;
+   margin-top:40px;
+   font-size:20px;
+}
+
+span{
+   font-size: 30px;
+   font-weight: 300;
+}
+
+li{
+   font-weight: lighter;
+   font-size: x-large;
+}
+
+/* About Page */
+.about{
+   background-image: url(./Images/Roto\ techX\ -\ no\ tagline\ transparent.png);
+   background-repeat: no-repeat;
+   background-position: 280px 220px;
+   background-size: 65%;
+}
+
+.about-mob{
+   display: none;
+}
+
+/* Sponser Page */
+.sponser{
+   background-image: url(./Images/Roto\ techX\ -\ no\ tagline\ transparent.png);
+   background-repeat: no-repeat;
+   background-position: 280px 220px;
+   background-size: 65%;
+}
+
+.sponsor-mob{
+   display: none;
+}
+
+/* Media query */
+@media only screen and (max-width:1202px) {
+   .main{
+      display: block;
+   }
+
+   .main > section:nth-child(2) > img{
+      display: none;
+   }
+}
+
+@media only screen and (max-width:1158px) {
+   /* HomePage */
+   body{
+      background-image: url(./Images/output-onlinepngtools.png) !important;
+      /* background-blend-mode: !important; */
+      /* background-color: black !important; */
+      /* background-repeat: repeat !important; */
+      background-color: black !important;
+      background-position: center !important;
+      background-size:cover !important;
+      background-repeat: repeat !important;
+
+   }
+
+   .navdesk{
+      display: none;
+   }
+
+   .navmobile{
+      display: block;
+   }
+
+   .main > section:nth-child(1) > img{
+      width: 47rem;
+   }
+
+   .main > section:nth-child(1){
+      text-align: center;
+   }
+   .main{
+      margin: 1rem;
+   }
+
+   #innovate-text{
+      margin-top: 10rem !important;
+      font-size: 4rem !important;
+   }
+
+   #social-logo{
+      margin-top: 10rem !important;
+
+      width: 100px;
+   }
+
+   /* Problem domain */
+   #event-list1,#event-list2{
+      display: block !important;
+      margin: 0 0 0 5rem !important;
+   }
+   div > section:nth-child(1){
+      display: block !important;
+      margin: 0 !important;
+   }
+
+   div > section:nth-child(3){
+      display: block !important;
+      margin: 0 !important;
+   }
+
+   div > section:nth-child(3) > p{
+      display: block !important;
+      margin: 2rem 0 0 0 !important;
+      font-size: 2rem !important;
+   }
+
+   .bottom-left{
+      font-size: 3rem;
+   }
+
+   .event_button > img{
+      width:530px;
+      height:530px;
+   }
+
+   .event_button{
+      width: 750px;
+      height: 750px;
+   }
+
+   .bottom-left{
+      left: 120px;
+   }
+
+   #click-here-probdomain{
+      margin-top: 0rem !important;
+      font-size: 2.5rem !important;
+   }
+
+   /* Resource Page */
+
+   #resource-text{
+      font-size: 4rem !important;
+   }
+
+   li{
+      font-size: 2rem;
+      margin-top: 20px;
+      font-weight: lighter;
+   }
+
+   #resource-btn{
+      font-size: 3rem;
+   }
+
+   /* About page */
+   #about-desk{
+      display: none !important;
+   }
+
+   #about-nav-mob-head{
+      font-size: 1.3rem !important;
+      padding: 10px !important;
+   }
+
+   .about-mob{
+      display: block;
+   }
+
+   .sponsor-mob{
+      display: block;
+   }
+
+   .sponsor-desk{
+      display: none;
+   }
+
+   #sponsor-text{
+      font-size: 4rem !important;
+   }
+
+   #sponsor-group-mob > img{
+      margin-top: 5rem;
+      margin-left: 9rem;
+   }
+
+   #thankyou-text{
+      font-size: 5rem !important;
+      margin-top: 4.5rem !important;
+   }
+
+   #rotary-heading{
+      margin-top: 7rem;
+      font-size: 4rem !important;
+      margin-bottom: -7rem;
+   }
+
+   #submission-btn{
+      font-size: 2rem !important;
+   }
+
+   .download > strong{
+      font-size: 3rem !important;
+   }
+
+   .download{
+      padding: 0.6rem;
+   }
+
+   .water{
+      margin-left: 2.2rem;
+   }
+
+   .mother{
+      margin-left: 2.9rem;
+   }
+
+   .education{
+      margin-left: 2rem;
+   }
+
+   .economy{
+      margin-left: 7rem;
+   }
+
+   .environment{
+      margin-left: 7rem;
+   }
+}
