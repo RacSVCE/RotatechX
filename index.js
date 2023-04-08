@@ -1,4 +1,4 @@
-var x = document.getElementById('nav-mob-list');
+var x = Rota-TechX.getElementById('nav-mob-list');
 
 function openmenu(){
 
